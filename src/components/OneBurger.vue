@@ -6,9 +6,9 @@
     <ul>
       <section class="ingredients">
         <li>{{ burger.calories }} kCal</li>
-        <li> Contains Lactose: <span id="ingred"> {{ burger.lactose }} </span> </li>
-        <li> Contains Gluten: <span id="ingred"> {{ burger.gluten }} </span> </li>
-        <p>{{ amountOrdered }}</p>
+        <li v-if="burger.lactose" >Contains <span class="ingredients"> lactose </span> </li>
+        <li v-if="burger.gluten">Contains <span class="ingredients"> gluten </span> </li>
+        
       </section>
     </ul>
     <p>Amount:
@@ -42,7 +42,9 @@ export default {
     },
 
     removeBurger: function () {
-      this.amountOrdered -= 1 ;
+      if(amountOrdered>0){
+        this.amountOrdered -= 1 ;
+      }
       this.$emit('orderedBurger', {
         name: this.burger.name,
         amount: this.amountOrdered

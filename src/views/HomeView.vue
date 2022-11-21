@@ -111,7 +111,12 @@ function MenuItem(burger, pic, kCal, glu, lac) {
 }
 
 // Objects are then instantiated using the *new* keyword
-const burgers_list = [new MenuItem('Fire Burger', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR4AfmKtBcOqDJcCWWY3-qguPmlt0QBxQ2QQ&usqp=CAU', '750', 'Yes', 'Yes'), new MenuItem('Cheese Burger', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36qM-nAlweinP0km3B5I4KQZNz2ant-WO7A&usqp=CAU', '600', 'Yes', 'Yes'), new MenuItem('Ydrewood Special', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg-7Bi7xnVDA6IQ-X9ncHs2aujJcRHbBcDmA&usqp=CAU', '550', 'Yes', 'Yes'), new MenuItem('Vegan Burger Special', 'https://biancazapatka.com/wp-content/uploads/2020/05/veganer-bohnen-burger.jpg', '430', 'No', 'No'), new MenuItem('Burger Surprise', 'https://media-cdn.tripadvisor.com/media/photo-s/1b/57/ab/58/sink-your-teeth-into.jpg', '550', 'No', 'Yes'), new MenuItem('Salmon Avocado Burger', 'https://www.seafoodexperts.com.au/wp-content/uploads/2018/01/SR-152-Avocado-salmon-salad-burger-CLEAN.jpg', '300', 'No', 'No')];
+const burgers_list = [new MenuItem('Fire Burger', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR4AfmKtBcOqDJcCWWY3-qguPmlt0QBxQ2QQ&usqp=CAU', '750', 'Yes', 'Yes'), 
+new MenuItem('Cheese Burger', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36qM-nAlweinP0km3B5I4KQZNz2ant-WO7A&usqp=CAU', '600', 'Yes', 'Yes'), 
+new MenuItem('Ydrewood Special', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg-7Bi7xnVDA6IQ-X9ncHs2aujJcRHbBcDmA&usqp=CAU', '550', 'Yes', 'Yes'), 
+new MenuItem('Vegan Burger Special', 'https://biancazapatka.com/wp-content/uploads/2020/05/veganer-bohnen-burger.jpg', '430', 'No', 'No'), 
+new MenuItem('Burger Surprise', 'https://media-cdn.tripadvisor.com/media/photo-s/1b/57/ab/58/sink-your-teeth-into.jpg', '550', 'No', 'Yes'), 
+new MenuItem('Salmon Avocado Burger', 'https://www.seafoodexperts.com.au/wp-content/uploads/2018/01/SR-152-Avocado-salmon-salad-burger-CLEAN.jpg', '300', 'No', 'No')];
 console.log(burgers_list); // Output: Maike
 
 
