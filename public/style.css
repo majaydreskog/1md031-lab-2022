@@ -1,1 +1,99 @@
-div {display: inline-block;}
+@import 'https://fonts.googleapis.com/css?family=Pacifico|Dosis';
+
+.wrapper{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 33% 33% 33%;
+    background-color: rgb(138, 129, 129);
+    color: white;
+}
+
+.burger{
+    background-color: rgb(97, 87, 87);
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    font-size:90%;
+}
+
+
+
+body{
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+.ingredients{
+    color: black;
+}
+
+#ingred{
+    font-weight: bold;
+    color: black;
+}
+
+#selectBurger{
+    background-color: rgb(50, 40, 40);
+    color: white;
+    margin: 30px;
+    padding: 5px 10px;
+    border: ridge burlywood;
+}
+
+button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+#customerInfo{
+    margin: 30px;
+    padding: 5px 10px;
+    border: groove burlywood;
+}
+
+button{
+    margin: 0px 20px 20px 20px;
+    background-color: lightgray;
+    color: black;
+}
+
+div{
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+}
+
+header{
+    margin: 0px 10px 0px 10px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+
+#headerImg{
+    opacity: 0.90;
+    width: 100%;     
+    height: auto;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+#selectBurger img{
+    opacity: 0.90;
+    width: 200px;     
+    height: 200px;
+    overflow: hidden;
+}
+
+
+h1 {
+    color: white;
+    position: absolute;
+    padding: 100px 100px;
+    margin-top: -690px;
+    margin-left: 290px;
+    font-size: 80px;
+}
+
+
