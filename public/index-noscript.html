@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>YdrewoodHamburger </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <section>
+        <header>
+            <img id="headerImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3q0lX_-KpXS5pLcDqtdW8_zXJnKwZh_kNWA&usqp=CAU">
+            <h1> Welcome to BurgerOnline</h1>
+        </header>
+    </section>
+    <main>
+        <section id="selectBurger">
+            <h2>Select Burger</h2>
+            <p>This is where you execute burger selection</p>
+            <div class="wrapper">
+
+
+                <div class="burger A" > 
+                    <h2> Fire Burger </h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR4AfmKtBcOqDJcCWWY3-qguPmlt0QBxQ2QQ&usqp=CAU"
+                        style="width: 200px">
+                    <ul>
+                        <section class="ingredients">
+                            <li>750kCal</li>
+                            <li> Contains <span id="ingred"> Lactose </span> </li>
+                            <li> Contains <span id="ingred"> Gluten </span> </li>
+                        </section>
+                    </ul>
+                </div>
+
+                <div class="burger B">
+                    <h2>Cheese Burger</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36qM-nAlweinP0km3B5I4KQZNz2ant-WO7A&usqp=CAU"
+                        style="width: 200px">
+                    <ul>
+                        <section class="ingredients" >
+                            <li> 600kCal </li>
+                            <li> Contains <span id="ingred"> Lactose </span> </li>
+                            <li> Contains <span id="ingred"> Gluten </span> </li>
+                        </section>
+                    </ul>
+                </div>
+
+                <div class="burger C">
+                    <h2>Ydrewood Special</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg-7Bi7xnVDA6IQ-X9ncHs2aujJcRHbBcDmA&usqp=CAU"
+                        style="width: 150px">
+                    <ul>
+                        <section class="ingredients">
+                            <li>550kCal</li>
+                            <li> Contains <span id="ingred"> Lactose</span> </li>
+                            <li> Contains <span id="ingred"> Gluten </span> </li>
+                        </section>
+                    </ul>
+
+                </div>
+
+                <div class="burger D">
+                    <h2>Vegan Burger Special</h2>
+                    <img src="https://biancazapatka.com/wp-content/uploads/2020/05/veganer-bohnen-burger.jpg"
+                        style="width: 130px">
+                    <ul>
+                        <section class="ingredients" >
+                            <li>430kCal</li>
+                            <li> <span id="ingred"> Lactose free</span> </li>
+                            <li> <span id="ingred"> Gluten free </span> </li>
+                            <li> <span id="ingred"> Vegan </span> </li>
+                        </section>
+                    </ul>
+
+                </div>
+
+                <div class="burger E">
+                    <h2>Burger Surprise</h2>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/57/ab/58/sink-your-teeth-into.jpg"
+                        style="width: 200px">
+                    <ul>
+                        <section class="ingredients">
+                            <li>550kCal</li>
+                            <li> Contains <span id="ingred"> Lactose</span> </li>
+                            <li> <span id="ingred"> Gluten free </span> </li>
+                        </section>
+                    </ul>
+
+                </div>
+
+                <div class="burger F">
+                    <h2>Salmon Avocado Burger</h2>
+                    <img src="https://www.seafoodexperts.com.au/wp-content/uploads/2018/01/SR-152-Avocado-salmon-salad-burger-CLEAN.jpg"
+                        style="width: 350px">
+                    <ul>
+                        <section class="ingredients">
+                            <li>300kCal</li>
+                            <li> <span id="ingred"> Lactose free</span> </li>
+                            <li> <span id="ingred"> Gluten free </span> </li>
+                        </section>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="customerInfo">
+            <h2>Customer Information</h2>
+
+
+
+            <h3>Delivery Information</h3>
+
+
+            <p>
+                <label for="firstname">Full Name </label><br>
+                <input type="text" id="First- and Last name" name="fn" required="required"
+                    placeholder="First- and Last name">
+            </p>
+
+            <p>
+                <label for="E-mail">E-mail </label><br>
+                <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+            </p>
+            <p>
+                <label for="Street">Street</label><br>
+                <input type="text" id="street" name="fn" required="required" placeholder="Street name">
+            </p>
+            <p>
+                <label for="House">House</label><br>
+                <input type="text" id="housenumber" name="fn" required="required" placeholder="House number">
+            </p>
+
+            <label for="Gender">Gender</label><br>
+            <p>
+                <input type="radio" id="male" name="fn" required="required" placeholder="male">
+                <label for="Male">Male</label>
+            </p>
+            <p>
+                <input type="radio" id="Female" name="fn" required="required" placeholder="Female">
+                <label for="Female">Female</label>
+            </p>
+
+            <p>
+                <input type="radio" id="Undisclosed" name="fn" required="required" placeholder="Undisclosed">
+                <label for="Undisclosed">Undisclosed</label> 
+            </p>
+
+        </section>
+        <p>
+            <label for="recipient">Payment options</label><br>
+                <select id="recipient" name="rcp">
+                    <option>Credit card</option>
+                    <option>Swish</option>
+                    <option>Paypal</option>
+                    <option>Cash</option>
+                </select>
+        </p>
+
+        <button type="submit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMHn2kJfGL_po26BsKUhzyC20BTB8GzX8IAA&usqp=CAU"
+                style="width: 50px">
+            Send Info
+        </button>
+
+
+    </main>
+    <footer>
+        <hr>
+        &copy; 2022 Ydrewood Burgers Inc
+    </footer>
+</body>
+
+
+</html>

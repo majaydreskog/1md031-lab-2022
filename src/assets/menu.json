@@ -1,0 +1,57 @@
+
+[
+    {
+      "name": "Fire Burger",
+      "calories": 750,
+      "lactose": true,
+      "gluten": true,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR4AfmKtBcOqDJcCWWY3-qguPmlt0QBxQ2QQ&usqp=CAU"
+    }
+    ,
+
+    {
+        "name": "Cheese Burger",
+        "calories": 600,
+        "lactose": true,
+        "gluten": true,
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36qM-nAlweinP0km3B5I4KQZNz2ant-WO7A&usqp=CAU"
+      }
+      , 
+
+      {
+        "name": "Ydrewood Special",
+        "calories": 550,
+        "lactose": true,
+        "gluten": true,
+        "url": "https://www.halsanskok.se/sites/default/files/recipes/e9305d1a41ad3e2fc956249a35f9d73e_200828_MEDIAMONKS_GG_Deluxitarian.jpg"
+      }
+      , 
+      {
+        "name": "Vegan Burger Special",
+        "calories": 430,
+        "lactose": false,
+        "gluten": false,
+        "url": "https://biancazapatka.com/wp-content/uploads/2020/05/veganer-bohnen-burger.jpg"
+      }
+      , 
+      {
+        "name": "Burger Surprise",
+        "calories": 550,
+        "lactose": true,
+        "gluten": false,
+        "url": "https://www.deluxeburgerandpizza.fi/wp-content/uploads/2021/07/Bear-Burger.jpeg"
+      }
+
+      , 
+      {
+        "name": "Salmon Avocado Burger",
+        "calories": 300,
+        "lactose": false,
+        "gluten": false,
+        "url": "https://foodschmooze.org/wp-content/uploads/2019/05/Avo-Burger-c-Henry-Hargreaves.jpg"
+      }
+
+
+
+
+  ]
