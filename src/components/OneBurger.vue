@@ -42,7 +42,7 @@ export default {
     },
 
     removeBurger: function () {
-      if(amountOrdered>0){
+      if(this.amountOrdered>0){
         this.amountOrdered -= 1 ;
       }
       this.$emit('orderedBurger', {

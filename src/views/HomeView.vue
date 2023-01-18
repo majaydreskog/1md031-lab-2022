@@ -26,31 +26,31 @@
         <h3>Delivery Information</h3>
 
 
-        <p>
+        
           <label for="firstname">Full Name </label><br>
           <input type="text" id="First- and Last name" v-model="na" required="required"
             placeholder="First- and Last name">
-        <p>{{ na }}</p>
-        </p>
+          <p>{{ na }}</p>
+      
 
-        <p>
+        
           <label for="E-mail">E-mail </label><br>
           <input type="email" id="email" v-model="em" required="required" placeholder="E-mail address">
         <p>{{ em }}</p>
-        </p>
-       
+        
+
 
         <div class="mapScroll">
           <div id="map" v-on:click="setLocation">
-            
+
             <div id="dots">
-            <div v-bind:style="{
-              left: location.x + 'px',
-              top: location.y + 'px'
-            }">
-              T
+              <div v-bind:style="{
+                left: location.x + 'px',
+                top: location.y + 'px'
+              }">
+                T
+              </div>
             </div>
-          </div>
           </div>
         </div>
         <br>
@@ -111,11 +111,11 @@ function MenuItem(burger, pic, kCal, glu, lac) {
 }
 
 // Objects are then instantiated using the *new* keyword
-const burgers_list = [new MenuItem('Fire Burger', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR4AfmKtBcOqDJcCWWY3-qguPmlt0QBxQ2QQ&usqp=CAU', '750', 'Yes', 'Yes'), 
-new MenuItem('Cheese Burger', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36qM-nAlweinP0km3B5I4KQZNz2ant-WO7A&usqp=CAU', '600', 'Yes', 'Yes'), 
-new MenuItem('Ydrewood Special', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg-7Bi7xnVDA6IQ-X9ncHs2aujJcRHbBcDmA&usqp=CAU', '550', 'Yes', 'Yes'), 
-new MenuItem('Vegan Burger Special', 'https://biancazapatka.com/wp-content/uploads/2020/05/veganer-bohnen-burger.jpg', '430', 'No', 'No'), 
-new MenuItem('Burger Surprise', 'https://media-cdn.tripadvisor.com/media/photo-s/1b/57/ab/58/sink-your-teeth-into.jpg', '550', 'No', 'Yes'), 
+const burgers_list = [new MenuItem('Fire Burger', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR4AfmKtBcOqDJcCWWY3-qguPmlt0QBxQ2QQ&usqp=CAU', '750', 'Yes', 'Yes'),
+new MenuItem('Cheese Burger', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36qM-nAlweinP0km3B5I4KQZNz2ant-WO7A&usqp=CAU', '600', 'Yes', 'Yes'),
+new MenuItem('Ydrewood Special', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg-7Bi7xnVDA6IQ-X9ncHs2aujJcRHbBcDmA&usqp=CAU', '550', 'Yes', 'Yes'),
+new MenuItem('Vegan Burger Special', 'https://biancazapatka.com/wp-content/uploads/2020/05/veganer-bohnen-burger.jpg', '430', 'No', 'No'),
+new MenuItem('Burger Surprise', 'https://media-cdn.tripadvisor.com/media/photo-s/1b/57/ab/58/sink-your-teeth-into.jpg', '550', 'No', 'Yes'),
 new MenuItem('Salmon Avocado Burger', 'https://www.seafoodexperts.com.au/wp-content/uploads/2018/01/SR-152-Avocado-salmon-salad-burger-CLEAN.jpg', '300', 'No', 'No')];
 console.log(burgers_list); // Output: Maike
 
@@ -170,7 +170,7 @@ export default {
     submit: function () {
       console.log(this.na, this.em, this.gender, this.pmt)
       console.log(this.orderedBurgers)
-      
+
       socket.emit("addOrder", {
         orderId: this.getOrderNumber(),
         details: {
@@ -330,25 +330,23 @@ div {
 
 
 #dots {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-    width:1920px;
-    height: 1078px;
-    cursor: crosshair;
-  }
-  
-  #dots div {
-    position: absolute;
-    background: black;
-    color: white;
-    border-radius: 10px;
-    width:20px;
-    height:20px;
-    text-align: center;
-  }
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 1078px;
+  cursor: crosshair;
+}
 
-
+#dots div {
+  position: absolute;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
 </style>
 
